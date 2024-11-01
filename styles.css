@@ -212,7 +212,7 @@ section{
     height: 6vh;
     margin: 30px;
     background-color: #077b32;
-    color: white;
+    color: white; 
     border: none;
     outline: none;
     font-size: 120%;
@@ -231,17 +231,7 @@ section{
 }
 
 
-/* For screen smaller than 768px */
-@media(max-width: 768px){
-    .skills .skills-details{
-        flex-direction:column;   /*stack  skills section vertically */
-    } 
 
-    .skills-details .text,
-    .skills-details .boxes{
-        width:100%;  /* Make each part full width */
-    }
-}
 
 @media (max-width:884px) {
     nav .logo{
@@ -300,157 +290,188 @@ section{
 
 /* About Section Styling */
 
-section .content{
-    width:80%;
-    margin: 0px auto;
-    font-family: 'Poppins', sans-serif;
-}
-
-.about.about-details{
+.about-me{
+    width: 85%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin: 50px auto;
 }
-section .title{
-    display: flex;
+
+.about-text{
+    max-width: 45%;
+    margin: 0px 20px;
+}
+
+.about-img img{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #077b32;
+}
+
+.about-text h2{
+    font-size:45px;
+    color:white;
+    margin-bottom: 20px;
+}
+
+.about-text p{
+    font-size: 17px;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.button{
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #077b32;
+    border-radius: 5px;
+    color: white;
+}
+
+.button:hover{
+    background-color: transparent;
+    border: 2px solid #077b32;
+    color: #077b32;
+}
+
+/* @media screen and(max-width:765px){
+    .about-me{
+        flex-direction:column;
+    }
+
+    .about-text{
+        max-width: 1001;
+        margin: 50px;
+    }
+    
+} */
+
+/* .details .aboutimgbox::before{
+    position: absolute;
+    content: '';
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    z-index: 9999;
+    scale:1.08;
+    background: linear-gradient(to top left, var(--primary) 50%, #000 50%);
+    border: 5px solid var(--primary); */
+
+/* Contact Section Styling */
+.contact{
+    min-height: 100vh;
+    padding: 50px;
+    display:flex;
     justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.contact-container{
+    max-width: 800px;
+    margin:0 auto;
+
+}
+
+.contact-container h2{
+    font-size: 36px;
     margin-bottom: 40px;
     color: white;
 }
 
-section .title span{
-    color: white;
-    font-size: 30px;
-    font-weight: 600;
-    position: relative;
-    padding-bottom: 8px;
-}
-
-section .titile span::before,
-section .title span::after{
-    content: '';
-    position: absolute;
-    height: 3px;
+.contact-wrapper{
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:100px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 170px;
+    justify-content: center;
     width: 100%;
+    max-width: 1100px;
+}
+
+.contact-form{
+    text-align:left;
+}
+
+.contact-form h3{
+    font-size:20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.form-group{
+    margin-top: 20px;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+.input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #077b32;
+}
+
+.contact-button{
+    display: inline-block;
+    padding: 10px 20px;
     background-color: #077b32;
-    left: 0;
-    bottom: 0;
-}
-
-
-.about .about-details.left{
-    width: 45%;
-
-}
-.about .left img{
-    height:400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.about-details .right{
-    width: 55%;
-}
-section .topic{
     color: white;
-    font-size: 25px;
-    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 5px;
+    font-size: 16px;
+   
+}
+
+.contact-button:hover{
+    background-color: transparent;
+    border: 2px solid #077b32;
+    color: #077b32;
+}
+
+.contact-info{
+    text-align: left;
+}
+
+.contact-info h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-info p{
+    color: white;
     margin-bottom: 10px;
+    font-size: small;
 }
 
-.about-details .right p{
-    text-align: justify;
-    color: white;
+.contact-info i{
+    font-size: 20px;
+    color: #077b32;
+    margin-right: 10px;
 }
-section .button{
-    margin: 16px 0;
+
+@media screen and (max-width: 768px){
+    .contact-container{
+        padding: 20px;
+    }
+    .contact-wrapper{
+        gap: 50px;
+    }
     
 }
-
-section .button button{
-    outline: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-size: 25px;
-    font-weight: 400;
-    background-color: #077b32;
-    color: #fff;
-    border:2px solid transparent; 
-    cursor: pointer;
-    transition: all 0.4s ease;
-}
-
-section .button button:hover{
-    border-color: #077b32;
-    background-color: #fff;
-    color: #077b32;
-}
-
-.skills{
-    background: black;
-}
-
-.skills .content{
-    padding: 40px 0;
-}
-
-.skills .skills-details{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.skills-details .text{
-    width:50%;
-}
-
-.skills-details p{
-    color:white;
-    text-align: justify;
-
-}
-
-.skills .skills-details .experince{
-    display: flex;
-    align-items:center;
-    margin: 0 10px;
-}
-
-.skills-details .experince .num{
-    color:white;
-    font: size 80px;
-}
-
-.skills-details .experince .exp{
-    color: white;
-    margin-left: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0 6px;
-}
-
-.skills-details .boxes{
-    width:45%;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-}
-
-.skills-details .box{
-    width:calc(100%/2 - 20px);
-    margin:20px 0;
-}
-
-.skills-details .boxes .topic{
-    font-size: 20px;
-    color:#077b32
-}
-
-.skills-details .boxes .per{
-    font-size: 60px;
-    color: #077b32;
-}
-
-
-
