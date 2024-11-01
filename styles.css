@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Montserrat+Alternates:wght@400;500;600&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     padding: 0;
@@ -368,8 +369,7 @@ section{
     display:flex;
     justify-content: center;
     text-align: center;
-    margin-top: 50px;
-
+   
 }
 
 .contact-container{
@@ -466,7 +466,7 @@ textarea:focus{
     margin-right: 10px;
 }
 
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
     .contact-container{
         padding: 20px;
     }
@@ -474,4 +474,120 @@ textarea:focus{
         gap: 50px;
     }
     
+} */
+
+/* blog page styling */
+
+.blog-section{
+    font-family: 'Roboto', sans-serif;
+    width:100%;
 }
+
+.section .content-blog{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.section .content-blog .blog-title{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.section .content-blog .blog-title h2{
+    font-size: 40px;
+    color: white;
+    text-transform:uppercase;
+
+}
+
+.section .content-blog .blog-title h2 p{
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}
+
+.section .content-blog .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 40px auto;
+}
+
+.section .content-blog .cards .card{
+    width:100%;
+    background-color: #333;
+    position: relative;
+}
+
+.section .content-blog .cards .card img{
+    width: 100%;
+    height: auto;
+}
+
+.section .content-blog .cards .card .article{
+    padding: 5px 10px;
+}
+
+.section .content-blog .cards .card .article h3{
+    font-size: 24px;
+    color: white;
+}
+
+.section .content-blog .cards .card .article p{
+    font-size: 15px;
+    color: white;
+    line-height: 1.5;
+    margin-top: 4px 0px;
+}
+
+.section .content-blog .cards .card .btn{
+    margin-bottom: 15px;
+
+}
+
+.section .content-blog .cards .card a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background-color: #077b32;
+    padding: 8px 15px;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    margin: 5px 10px;
+}
+
+.section .content-blog .cards .card  a:hover{
+    background-color: transparent;
+    transition: 0.5s all;
+    border: 2px solid #077b32;
+    color: #077b32;
+}
+
+.section .content-blog .cards .card .posted-date p{
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    background-color: #077b32;
+    padding: 6px 8px;
+    top:0;
+    left: 0;
+    display: inline-block;
+
+}
+
+@media screen and (max-width: 992px){
+    .section .content-blog .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .section .content-blog .cards{
+        grid-template-columns:1fr;
+    }
+    
+}
+
+
