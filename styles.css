@@ -307,7 +307,13 @@ button:hover{
     height: auto;
     border-radius: 50%;
     box-shadow: 0 0 20px #077b32;
+    margin-left: 250px;
 }
+
+.about-img{
+   
+}
+
 
 .about-text h2{
     font-size:45px;
@@ -576,6 +582,8 @@ footer {
     background-color: #333; /* Dark background color for footer */
     padding: 20px 0; /* Top and bottom padding */
     text-align: center; /* Center-aligns text */
+    bottom: 0; /* Keeps footer at the bottom of the page */
+    margin-top: 200px;
 }
 
 footer .text {
