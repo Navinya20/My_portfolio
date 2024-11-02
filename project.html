@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="styles.css">
+        <title>Navinya Portfolio</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                    Navinya <span>Dewamiththa</span>
+                </div>
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Blogs</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Blogs</a>
+                    <a href="#">Contact</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section class="blog-content">
+                <article>
+                    <h2>How Data Structures and Algorithms 
+                        Drive Real-World Applications</h2>
+                    <p class="date">May 1, 2023</p>
+                    <p>Covers essential data structures (arrays, trees, graphs) 
+                        and algorithms (sorting, searching) and their importance 
+                        in creating efficient software. Features real-world examples 
+                        from companies like Google and Facebook and beginner-friendly 
+                        resources for coding practice.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </article>
+
+                <article>
+                    <h2>The Power of Machine Learning in Everyday 
+                        Life: Applications and Beginner Tips</h2>
+                    <p class="date">May 15, 2023</p>
+                    <p> Introduces key ML concepts like supervised 
+                        and unsupervised learning, showing applications 
+                        across industries like healthcare and entertainment. 
+                        Offers actionable tips for beginners, including Python 
+                        libraries and starter projects.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </article>
+
+                <article>
+                    <h2> Portfolio </h2>
+                    <p class="date">June 1, 2023</p>
+                    <p>Creating a personal portfolio website is an important step for any web developer or designer. It's a place to showcase your skills, projects, and personality to potential clients or employers.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </article>
+            </section>
+
+            <aside>
+                <div class="widget">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li><a href="#">Building a Portfolio Website</a></li>
+                        <li><a href="#">How Data Structures and Algorithms 
+                            Drive Real-World Applications</a></li>
+                        <li><a href="#">The Power of Machine Learning in Everyday 
+                            Life: Applications and Beginner Tips</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Personal</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3>About Me</h3>
+                    <p>I'm a passionate web developer and designer, 
+                       always learning and exploring new technologies. 
+                       This blog is where I share my journey and insights.</p>
+                </div>
+            </aside>
+        </main>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init({offset:0});
+        </script>
+        <script src="script.js"></script>
+         <!--Footer section-->
+         <footer>
+            <div class="text">
+                <span>Created By
+                    <a href="#">Navinya</a>
+                    &#169; 2024 All Rights Reserved</span> 
+            </div> 
+        </footer>
+    </body>
+</html>
