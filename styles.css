@@ -18,7 +18,10 @@ body{
 nav{
     width: 100%;
     height: 10vh;
-    position: sticky;
+    position: fixed;
+    background-color:black;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-container{
@@ -123,11 +126,13 @@ section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 100px;
+    
 }
 
 .main-container .image{
-    width: 500px;
-    height: 80vh;
+    width: 400px;
+    height: 65vh;
     border-radius: 100%;
     overflow: hidden;
     box-shadow: 0 0 50px #077b32;
@@ -295,6 +300,7 @@ button:hover{
     display: flex;
     justify-content: space-between;
     margin: 50px auto;
+    padding-top: 100px;
 }
 
 .about-text{
@@ -325,7 +331,7 @@ button:hover{
     margin-bottom: 20px;
 }
 
-/* @media screen and(max-width:765px){
+@media screen and(max-width:765px){
     .about-me{
         flex-direction:column;
     }
@@ -335,18 +341,8 @@ button:hover{
         margin: 50px;
     }
     
-} */
+} 
 
-/* .details .aboutimgbox::before{
-    position: absolute;
-    content: '';
-    width: inherit;
-    height: inherit;
-    border-radius: 50%;
-    z-index: 9999;
-    scale:1.08;
-    background: linear-gradient(to top left, var(--primary) 50%, #000 50%);
-    border: 5px solid var(--primary); */
 
 /* Contact Section Styling */
 .contact{
@@ -355,7 +351,7 @@ button:hover{
     display:flex;
     justify-content: center;
     text-align: center;
-   
+    padding-top: 200px; 
 }
 
 .contact-container{
@@ -371,9 +367,6 @@ button:hover{
 }
 
 .contact-wrapper{
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap:100px; */
     display: flex;
     flex-wrap: wrap;
     gap: 170px;
@@ -460,17 +453,6 @@ textarea:focus{
     
 }
 
-/* @media screen and (max-width: 768px){
-    .contact-container{
-        padding: 20px;
-    }
-    .contact-wrapper{
-        gap: 50px;
-    }
-    
-} */
-
-
 
 /* Project Page Styling */
 
@@ -483,6 +465,7 @@ main {
     flex-wrap: wrap;
     padding: 100px;
     background-color: black; /* Match site background */
+    padding-top: 100px;
 }
 
 .blog-content {
@@ -566,13 +549,18 @@ article h2 {
     }
 }
 
+
 /* Footer Styling */
 footer {
     background-color: #333; /* Dark background color for footer */
     padding: 20px 0; /* Top and bottom padding */
     text-align: center; /* Center-aligns text */
     bottom: 0; /* Keeps footer at the bottom of the page */
-    margin-top: 200px;
+    margin-top: 100px;
+    /* position: fixed; */
+    width: 100%;
+    
+    
 }
 
 footer .text {
