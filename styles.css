@@ -584,14 +584,34 @@ footer .text a:hover {
         height: 50%;
     }
 
+    
+    .about-me{
+        width: 85%;
+        display: block;
+        justify-content: space-between;
+        margin: 50px auto;
+        padding-top: 10px;
+    }
+
     .about-img img{
-        width: 1000px;
+        width: 500px;
         height: auto;
         border-radius: 100%;
         box-shadow: 0 0 20px #077b32;
-        margin-left: 150px;
+        margin-left: 100px;
         z-index: 999;
+        margin-top: -1220px;
+        position: absolute;
     }
+
+    .about-text{
+        max-width: 85%;
+        margin: 0px 20px;
+        margin-top: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     
     main {
         margin-top: 100px;
@@ -619,6 +639,9 @@ footer .text a:hover {
         margin-bottom: 20px;
         color: white;
     }
+
+  
+
 
 }
 
@@ -672,6 +695,33 @@ footer .text a:hover {
         margin-top: 20px;
         width: 300px;
         margin-left: 0px;
+    }
+
+    .about-me{
+        width: 85%;
+        display: block;
+        justify-content: space-between;
+        margin: 50px auto;
+        padding-top: 10px;
+    }
+
+    .about-img img{
+        width: 200px;
+        height: auto;
+        border-radius: 100%;
+        box-shadow: 0 0 20px #077b32;
+        margin-left: 55px;
+        z-index: 999;
+        margin-top: -1100px;
+        position: absolute;
+    }
+
+    .about-text{
+        max-width: 85%;
+        margin: 0px 20px;
+        margin-top: 400px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
 }
