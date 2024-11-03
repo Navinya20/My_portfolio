@@ -40,13 +40,24 @@
                         <h3>Send a message</h3>
                         <form>
                             <div class="form-group">
-                                <input type="text" name="name" placeholder="Your Name">
+                                <input type="text" 
+                                name="name" 
+                                placeholder="Your Name"
+                                required
+                                title="Name should only contain letters and spaces">
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" 
+                                name="email" 
+                                placeholder="Your Email"
+                                required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                title="Please enter a valid email address">
                             </div>
                             <div class="form-group">
-                                <input type="email" name="email" placeholder="Your Email">
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" placeholder="Your Message"></textarea>
+                                <textarea name="message" 
+                                placeholder="Your Message"></textarea>
                             </div>
                             
                                 <button class="contact-btn">Send Message</button>

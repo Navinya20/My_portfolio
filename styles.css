@@ -91,6 +91,22 @@ nav{
     color: #077b32;
 }
 
+/* Add child combinator to nav links */
+.nav-container > .links > .link {
+    position: relative;
+}
+
+/* Add negation pseudo-class */
+.nav-container .links .link a:not(.active){
+    opacity: 0.8;
+}
+
+/* Add more specific selectors for better specificity */
+.nav-container .links .link a.active{
+    color: #077b32;
+    font-weight: 600;
+}
+
 
 
 .dropdown{
@@ -220,7 +236,7 @@ button{
     width: 50%;
     height: 6vh;
     margin: 30px;
-    background-color: #077b32;
+    background: #077b32;
     color: white; 
     border: none;
     outline: none;
@@ -355,6 +371,25 @@ textarea:focus{
     box-shadow: 0 0 8px #077b32;
 }
 
+/* atribute seectors */
+input[type="email"]{
+    border-left: 3px solid #077b32;
+}
+
+input[type="text"]{
+    border-left: 3px solid #077b32;
+}
+
+/* validity pseudo-classes */
+
+input:valid{
+    border-color: #077b32;
+}
+
+input:invalid{
+    border-color: #f4444f;
+}
+
 .contact-btn{
     width: 80%;
     height: 6vh;
@@ -415,6 +450,24 @@ main {
 .blog-content {
     flex: 3;
     margin-right: 2rem;
+}
+
+.blog-content h2::before{ /* Add pseudo elements with generated content to blog headings */
+    content: attr(data-text);
+    margin-top: 5px;
+}
+
+/* Add nth-child for blog articles */
+.blog-content article:nth-child(odd) { 
+    background-color: rgba(7,123,50,0.05);
+}
+
+.blog-content article:nth-child(even) { 
+    background-color: rgba(0,0,0,0.7);
+}
+
+.blog-content article:first-of-type{ /* Add structural selector */
+    border-top: 3px solid #077b32;
 }
 
 aside {
@@ -497,23 +550,6 @@ article h2 {
 .widget li a:hover {
     color: #077b32;
 }
-
-footer {
-    background-color: #111;
-    padding: 1rem;
-    text-align: center;
-    color: #bbb;
-}
-
-footer a {
-    color: #077b32;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
 
 
 /* Footer Styling */
