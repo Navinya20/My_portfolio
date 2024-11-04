@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Montserrat+Alternates:wght@400;500;600&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* Global styles */
 *{
     padding: 0;
     margin: 0;
@@ -91,17 +92,17 @@ nav{
     color: #077b32;
 }
 
-/* Add child combinator to nav links */
+
 .nav-container > .links > .link {
     position: relative;
 }
 
-/* Add negation pseudo-class */
+
 .nav-container .links .link a:not(.active){
     opacity: 0.8;
 }
 
-/* Add more specific selectors for better specificity */
+
 .nav-container .links .link a.active{
     color: #077b32;
     font-weight: 600;
@@ -365,7 +366,7 @@ textarea:focus{
     box-shadow: 0 0 8px #077b32;
 }
 
-/* atribute seectors */
+
 input[type="email"]{
     border-left: 5px solid #077b32;
 }
@@ -374,7 +375,6 @@ input[type="text"]{
     border-left: 5px solid #077b32;
 }
 
-/* validity pseudo-classes */
 
 input:valid{
     border-color: #077b32;
@@ -446,12 +446,12 @@ main {
     margin-right: 2rem;
 }
 
-.blog-content h2::before{ /* Add pseudo elements with generated content to blog headings */
+.blog-content h2::before{ 
     content: "📝";
     margin-top: 5px;
 }
 
-/* Add nth-child for blog articles */
+
 .blog-content article:nth-child(odd) { 
     background-color: rgba(7,123,50,0.05);
 }
@@ -460,7 +460,7 @@ main {
     background-color: #222;
 }
 
-.blog-content article:first-of-type{ /* Add structural selector */
+.blog-content article:first-of-type{ 
     border-top: 3px solid #077b32;
 }
 
@@ -492,7 +492,7 @@ article:hover {
 article h2 {
     color: #077b32;
     margin-top: 0;
-    font-family: 'Montserrat', sans-serif; /* Distinct font for headings */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .date {
@@ -550,10 +550,10 @@ article h2 {
 
 /* Footer Styling */
 footer {
-    background-color: #333; /* Dark background color for footer */
-    padding: 20px 0; /* Top and bottom padding */
-    text-align: center; /* Center-aligns text */
-    bottom: 0; /* Keeps footer at the bottom of the page */
+    background-color: #333; 
+    padding: 20px 0; 
+    text-align: center; 
+    bottom: 0;
     margin-top: 150px;
     width: 100%;
     
@@ -561,20 +561,20 @@ footer {
 }
 
 footer .text {
-    color: #fff; /* White text color */
-    font-size: 14px; /* Font size */
-    font-family: Arial, sans-serif; /* Font family */
+    color: #fff; 
+    font-size: 14px; 
+    font-family: Arial, sans-serif; 
 }
 
 footer .text a {
-    color: #4CAF50; /* Link color */
-    text-decoration: none; /* Removes underline from link */
-    font-weight: bold; /* Boldens the link text */
+    color: #4CAF50; 
+    text-decoration: none;
+    font-weight: bold; 
 }
 
 footer .text a:hover {
-    color: #76FF03; /* Changes link color on hover */
-    text-decoration: underline; /* Underlines link on hover */
+    color: #76FF03; 
+    text-decoration: underline;
 }
 
 /* tab */
