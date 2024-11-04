@@ -367,11 +367,11 @@ textarea:focus{
 
 /* atribute seectors */
 input[type="email"]{
-    border-left: 3px solid #077b32;
+    border-left: 5px solid #077b32;
 }
 
 input[type="text"]{
-    border-left: 3px solid #077b32;
+    border-left: 5px solid #077b32;
 }
 
 /* validity pseudo-classes */
@@ -457,7 +457,7 @@ main {
 }
 
 .blog-content article:nth-child(even) { 
-    background-color: rgba(0,0,0,0.7);
+    background-color: #222;
 }
 
 .blog-content article:first-of-type{ /* Add structural selector */
@@ -508,8 +508,8 @@ article h2 {
 
 .read-more:hover {
     background-color: black;
-    color: #077b32;
-    border: 1px solid #077b32;
+    color:whitesmoke;
+    border: 2px solid #077b32;
 }
 
 .widget {
